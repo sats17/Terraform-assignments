@@ -11,15 +11,6 @@ provider "aws" {
     }  
 }
 
-# resource "aws_s3_bucket" "b" {
-#   bucket = "demo-bucket-terraform"
-#   acl    = "public-read"
+# module "authenticator" {
+#   source = "../Modules-example/authenticator"
 # }
-
-resource "aws_instance" "my-own-ec2-server" {
-    ami = "ami-0db0b3ab7df22e366"
-    instance_type = "t2.micro"
-    tags = {
-      "ec2-server" = "ubunutu"
-    }
-}

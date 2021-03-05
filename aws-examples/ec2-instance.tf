@@ -4,7 +4,7 @@ provider "aws" {
     secret_key = "client-secret"    
 }
 
-resource "aws_instance" "my-own-ec2-server" {
+resource "aws_instance" "test-ec2-server" {
     ami = "ami-0db0b3ab7df22e366"
     instance_type = "t2.micro"
     tags = {

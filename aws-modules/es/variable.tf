@@ -3,7 +3,12 @@ variable "domain_name" {
   default     = "dev-domain"
 }
 
-variable "es_version" {
+variable "elasticsearch_version" {
   description = "Version of Elasticsearch to deploy (default 6.8)"
   default     = "6.8"
+}
+
+variable "tags" {
+  description = "Default tags"
+  default = {}
 }

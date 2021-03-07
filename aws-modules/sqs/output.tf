@@ -1,7 +1,7 @@
-output "queue_id" {
+output "id" {
     value = aws_sqs_queue.sqs.id
 }
 
-output "queue_arn" {
+output "arn" {
     value = aws_sqs_queue.sqs.arn
 }

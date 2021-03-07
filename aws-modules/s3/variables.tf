@@ -1,4 +1,4 @@
-variable "bucket_name" {
+variable "bucket" {
   description = "bucket name"
   default     = ""
 }
@@ -11,4 +11,9 @@ variable "acl" {
 variable "policy" {
   description = "bucket policy"
   default = ""
+}
+
+variable "tags" {
+  description = "default tags"
+  default = {}
 }

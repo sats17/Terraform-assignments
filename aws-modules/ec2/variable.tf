@@ -14,3 +14,9 @@ variable "tags" {
   type = map(string)
   default = {}
 }
+
+variable "name" {
+  description = "Name of the instance"
+  type        = string
+  default = "default"
+}

@@ -1,8 +1,3 @@
-provider "aws" {
-    region     = "us-east-1"
-    access_key = "key"
-    secret_key = "key"    
-}
 
 # Create ec2 instance using aws_instance resources
 # resource "aws_instance" "test-ec2-server" {
